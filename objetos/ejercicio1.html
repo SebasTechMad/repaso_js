@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>libreria</title>
+        <link rel="stylesheet" href="../estilos/css/styles.css">
+        <script src="../estilos/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./js/ejericicio1.js"></script>
+        
+    </head>
+    <body onload="cargarVariables()">
+        <main class="container shadow">
+            <header class="col-12 mt-2">
+                <h1 class="text-center">Bienvenido a esta librería</h1>
+            </header>
+            
+            <article class="col-12 mt-5 d-flex flex-wrap">
+
+                <section class="col-6 d-flex justify-content-center">
+                    <!-- Formulario para el libro -->
+                    <div class="col-8 rounded-3 shadow-lg d-flex flex-column gap-4">
+                        <h3 class="text-center mt-2">AÑADIR LIBROS</h1>
+                        
+                        <div class="col-6 ms-3">
+                            <label class="form-label" for="">Titulo</label>
+                            <input class="form-control" name="info-libro" type="text">
+                        </div>
+
+                        <div class="col-6 ms-3">
+                            <label class="form-label" for="">Autor</label>
+                            <input class="form-control" name="info-libro" type="text">
+                        </div>
+
+                        <div class="col-6 ms-3">
+                            <label class="form-label" for="">Descripcion</label>
+                            <input class="form-control" name="info-libro" type="text">
+                        </div>
+
+                        <input type="button" class="btn btn-outline-primary mb-3" id="btnAdd" style="width: fit-content; align-self: center;" value="añadir libro">
+
+                    </div>
+                </section>
+
+                <section class=" col-6">
+                    <div class="col-12 d-flex flex-wrap gap-4">
+                        <div class="form-floating col-8 d-flex flex-wrap">
+                            <input class="form-control" id="autor_buscado" type="text" placeholder="autor">
+                            <label class="form-label" for="autor_buscado">autor</label>
+                        </div>
+                        <div class="col-2 d-flex align-items-center">
+                            <input type="button" class="btn btn-outline-success" id="btnSearch" value="Buscar">
+                        </div>
+                    </div>
+                    <br><br>
+                    <div>
+                        <table id="tabla" class="table table-striped">
+                            
+                        </table>
+                    </div>
+
+
+
+                </section>
+
+
+            </article>
+
+
+
+
+
+        </main>
+    </body>
+</html>
