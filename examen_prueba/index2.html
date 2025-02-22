@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1 id="resultado"></h1>
+    </body>
+    <script>
+        let recuperar = () =>{
+            let current_plat = sessionStorage.getItem("pagina");
+            let resultado = document.getElementById("resultado");
+            resultado.textContent = current_plat;
+        }
+
+
+        document.addEventListener('DOMContentLoaded', recuperar, false);
+    </script>
+</html>
